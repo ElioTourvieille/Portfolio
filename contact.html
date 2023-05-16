@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio d'Eric Tourvieille de Labrouhe développeur web">
+    <link rel="icon" type="image" href="/img/Avatar.png">
+    <link rel="stylesheet" href="https://use.typekit.net/vyi7dbb.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="stylesheet/style.css">
+    <title>Eric Tourvieille de Labrouhe || Contactez-moi pour vos projets web !</title>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logoBox">
+            <a href="index.html"><img src="./img/logo-ETL.png" alt="Logo de Eric Tourvieille de Labrouhe"></a>
+        </div>
+
+        <nav class="nav">
+
+            <div class="nav-bar">
+                <p class="sm-header">Suivez-moi <i class="fa-solid fa-caret-down"></i></p>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#" id="icon icon--instagram" class="nav-link"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://github.com/ElioTourvieille" target="_blank" class="nav-link"><i class="fa-brands fa-github"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.behance.net/erictourvie" target="_blank" class="nav-link"><i class="fa-brands fa-behance"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.linkedin.com/in/eric-tourvieille-de-labrouhe-web-developer-designer/" target="_blank" class="nav-link"><i class="fab fa-linkedin-in"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="burger">
+                <span class="lines"></span>
+                <span class="lines"></span>
+                <span class="lines"></span>
+            </div>
+        </nav>
+
+        <div class="popup-menu">
+            <div class="logoBox_popup">
+                <a href="index.html"><img src="./img/logo-ETL.png" alt="Logo de Eric Tourvieille de Labrouhe"></a>
+                <h2>eric tourvieille</h2>
+            </div>
+            <div class="pop-menu_content">
+                <ul class="menu-items">
+                    <li>
+                        <img src="img/jeton-n°1.png" alt="Jeton de poker 01"><a href="index.html">Accueil</a>
+                    </li>
+                    <li>
+                        <img src="img/jeton-n°2.png" alt="Jeton de poker 02"><a href="work.html">Mes projets</a>
+                    </li>
+                    <li>
+                        <img src="img/jeton-n°3.png" alt="Jeton de poker 03"><a href="about.html">A propos</a>
+                    </li>
+                    <li>
+                        <img src="img/jeton-n°4.png" alt="Jeton de poker 04"><a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main id="form-wrapper">
+        <div class="form-title">
+            <h1>Contactez-moi </h1>
+            <p>Je suis impatient de vous entendre me parler de votre projet! Ou peut être d'échanger autour d'une petite partie de poker? </p>
+            <div class="whatsapp">
+                <a href="https://wa.me/+41799418968" target="_blank"><i class="ri-whatsapp-fill"></i><p>Whatsapp</p></a>
+            </div>
+            <div class="telegram">
+                <a href="https://t.me/eric_tourvieille" target="_blank"><i class="ri-telegram-fill"></i><p>Telegram</p></a>
+            </div>
+        </div>
+        <div class="contact-form">
+            <form class="form" id="contact-form">
+
+            <div class="input--small">
+                <input id="fname" class="form__field" type="text">
+                <label class="form__label">Prénom<i class="ri-close-circle-fill"></i></label>
+            </div>
+            
+            <div class="input--small">
+                <input id="lname" class="form__field" type="text">
+                <label class="form__label">Nom</label>
+                <p id="infoName"></p>
+            </div>
+            
+            <div class="input--small">
+                <input id="address" class="form__field" type="text">
+                <label class="form__label">Adresse</label>
+                <p id="infoAdress"></p>
+            </div>
+    
+            <div id=code class="input--small">
+                <input id="Zip" class="form__field" type="number">
+                <label class="form__label">Code Postal</label>
+                <p id="infoZip"></p>
+            </div>
+            
+            <div id=city class="input--small">
+                <input id="city-input" class="form__field" type="text">
+                <label class="form__label">Ville</label>
+                <p id="infoCity"></p>
+            </div>
+            
+            <div class="input--small">
+                <input id="mail" class="form__field" type="email" data-msg-email="Veuillez saisir un email valide">
+                <label class="form__label">Adresse mail</label>
+                <p id="infoMail"></p>
+            </div>
+    
+            <div class="input--small">
+                <input id="phone" class="form__field" type="tel">
+                <label class="form__label">Téléphone</label>
+                <p id="infoPhone"></p>
+            </div>
+    
+            <div class="input--small">
+                <textarea name="message" id="message" class="form__field" rows="4"></textarea>
+                <label class="form__label">Message</label>
+                <p id="infoMsg"></p>
+            </div>
+    
+            </form>
+            <div class="submit">
+                <button type="submit" class="btn-submit">Envoyer</button>
+            </div>
+        </div>
+    
+        <div class="modal-info">
+            <p class="modal-text"></p>
+            <button class="btn-modal">Fermer</button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="copyright">
+            <i class="ri-copyright-line"></i><p><span id="current-year"></span> - Eric Tourvieille de Labrouhe</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="./script/main.js"></script>
+</body>
+</html>

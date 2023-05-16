@@ -1,0 +1,19 @@
+@mixin reset-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+@mixin size($width, $height: $width) {
+    width: $width;
+    height: $height;
+}
+
+@mixin button($width, $height, $bgColor, $color, $border, $border-radius) {
+    width: $width;
+    height: $height;
+    background-color: $bgColor;
+    color: $color;
+}
